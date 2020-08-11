@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.images {
+  position: relative;
+  width: 180px;
+  height: 330px;
+  transform: rotate(-30deg) skewX(20deg);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  background-color: #eee;
+}
+
+.image {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  transition: 0.5s;
+}
+
+.image:nth-child(1) {
+  background-color: tomato;
+}
+
+.image:nth-child(2) {
+  background-color: gold;
+}
+
+.image:nth-child(3) {
+  background-color: teal;
+}
+
+.image:nth-child(4) {
+  background-color: dodgerblue;
+}
+
+.images:hover {
+  box-shadow: -50px 100px 60px rgba(0, 0, 0, 0.3);
+}
+
+.images:hover .image:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: 0.2;
+}
+
+.images:hover .image:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: 0.4;
+}
+
+.images:hover .image:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: 0.6;
+}
+
+.images:hover .image:nth-child(4) {
+  transform: translate(160px, -160px);
+  opacity: 0.8;
+}
